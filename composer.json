@@ -1,0 +1,29 @@
+{
+    "name": "coredump/laradav",
+    "description": "A training project to learn Laravel",
+    "type": "project",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "David Callizaya",
+            "email": "davidcallizaya@gmail.com"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "Illuminate\\": "Illuminate/",
+            "Laradav\\": "Laradav/",
+            "App\\": "app/"
+        },
+        "files": ["helpers/functions.php"]
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Tests\\": "tests\/"
+        }
+    },
+    "require": {},
+    "require-dev": {
+        "phpunit/phpunit": "^8.3"
+    }
+}

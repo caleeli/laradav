@@ -1,0 +1,16 @@
+#!/usr/bin/env php
+<?php
+
+use Laradav\Console\Output;
+
+require 'vendor/autoload.php';
+
+$app = require 'bootstrap/app.php';
+
+$kernel = $app->make(Illuminate\Contracts\Console\Kernel::class);
+
+$status = $kernel->handle($argv, new Output(STDOUT));
+
+$kernel->terminate($argv, $status);
+
+exit($status);
